@@ -16,7 +16,7 @@
     <h6>The Basic Language of the Web: HTML</h6>
     -->
 
-    <header class="header-top">
+    <header class="header-top clearfix">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -28,7 +28,7 @@
     </header>
 
     <article>
-      <header>
+      <header class="clearfix">
         <h2>The Basic Language of the Web: HTML</h2>
 
         <img
@@ -36,8 +36,9 @@
           alt="Headshot of Laura Jones"
           height="50"
           width="50"
+          class="author-img"
         />
-        <address>
+        <address class="author">
           <p id="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21<sup
               >st</sup
@@ -45,14 +46,14 @@
             2027
           </p>
         </address>
-
-        <img
-          src="img/post-img.jpg"
-          alt="HTML code on a screen"
-          width="500"
-          height="200"
-        />
       </header>
+
+      <img
+        src="img/post-img.jpg"
+        alt="HTML code on a screen"
+        width="500"
+        height="200"
+      />
 
       <p>
         All modern websites and web applications are built using three
@@ -120,7 +121,7 @@
       <h4>Related posts</h4>
 
       <ul>
-        <li class="related-post">
+        <li class="related-post clearfix">
           <img
             src="img/related-1.jpg"
             alt="Person programming"
@@ -130,12 +131,12 @@
           <a href="#">How to Learn Web Development</a>
           <p>By Jonas Schmedtmann</p>
         </li>
-        <li class="related-post">
+        <li class="related-post clearfix">
           <img src="img/related-2.jpg" alt="Lightning" width="75" heigth="75" />
           <a href="#">The Unknown Powers of CSS</a>
           <p>By Jim Dillon</p>
         </li>
-        <li class="related-post">
+        <li class="related-post clearfix">
           <img
             src="img/related-3.jpg"
             alt="JavaScript code on a screen"
@@ -147,6 +148,8 @@
         </li>
       </ul>
     </aside>
+
+    <div class="clear"></div>
 
     <footer>
       <p class="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
