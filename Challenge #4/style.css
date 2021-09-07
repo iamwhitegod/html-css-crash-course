@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 24px;
+}
+
+.flex-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: rgb(221, 221, 221);
+}
+
+.flex-item {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.item--1 {
+  background-color: orangered;
+  width: 100%;
+  padding: 24px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.item--2 {
+  background-color: purple;
+  width: 100%;
+}
+
+.item--3 {
+  background-color: green;
+  width: 70%;
+}
+
+.item--4 {
+  background-color: peru;
+  width: 30%;
+}
+
+.item--5 {
+  background-color: yellow;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
