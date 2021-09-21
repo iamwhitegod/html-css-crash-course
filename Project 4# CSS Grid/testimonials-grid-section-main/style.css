@@ -17,13 +17,13 @@ body {
 
 #testimonial-grid__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(150px, 230px));
   grid-template-rows: repeat(2, min-content);
   grid-gap: 24px;
   max-width: 80%;
   height: 100vh;
   margin: 0 auto;
-  /* align-items: center; */
+  justify-content: center;
   align-content: center;
 }
 
@@ -44,7 +44,7 @@ body {
   height: 32px;
   /*  DON'T FORGET TO CHANGE BORDER COLOR 
   TO LOOK LIKE THAT OF THE DESIGN */
-  border: 2px solid purple;
+  border: 2px solid hsl(263, 55%, 52%);
   border-radius: 50%;
 }
 
@@ -135,3 +135,41 @@ body {
 
 /* Light gray: hsl(0, 0%, 81%)
 Light grayish blue: hsl(210, 46%, 95%) */
+
+/*Small laptops & large Tablets*/
+@media only screen and (max-width: 1100px) {
+  #testimonial-grid__container {
+    max-width: 100%;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+  body {
+    height: 100%;
+    padding: 64px 24px;
+  }
+
+  #testimonial-grid__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    height: 100%;
+    margin-bottom: 24px;
+  }
+
+  .testimonial-grid__item {
+    grid-column: 1 / -1;
+  }
+
+  .item--5 {
+    grid-row: 5 / 6;
+  }
+
+  .item--1 .pattern {
+    right: 24px;
+  }
+
+  .attribution {
+    font-size: 14px;
+  }
+}
