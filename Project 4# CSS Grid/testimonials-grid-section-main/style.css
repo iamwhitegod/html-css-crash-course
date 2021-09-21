@@ -42,6 +42,8 @@ body {
 .testimonial-grid__author img {
   width: 32px;
   height: 32px;
+  /*  DON'T FORGET TO CHANGE BORDER COLOR 
+  TO LOOK LIKE THAT OF THE DESIGN */
   border: 2px solid purple;
   border-radius: 50%;
 }
@@ -63,8 +65,13 @@ body {
   color: hsl(0, 0%, 81%);
 }
 
+.testimonial-grid__quote {
+  position: relative;
+  z-index: 2;
+}
+
 .testimonial-grid__quote-large {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   color: hsl(210, 46%, 95%);
   margin-bottom: 24px;
@@ -79,6 +86,14 @@ body {
 .item--1 {
   grid-column: span 2;
   background-color: hsl(263, 55%, 52%);
+  position: relative;
+}
+
+.item--1 .pattern {
+  position: absolute;
+  top: 0;
+  right: 72px;
+  z-index: 1;
 }
 
 .item--2 {

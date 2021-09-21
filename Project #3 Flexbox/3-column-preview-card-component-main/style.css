@@ -98,3 +98,24 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Tablet or Small Laptop screen*/
+
+@media only screen and (max-width: 900px) {
+  body {
+    padding: 64px 24px;
+    height: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .attribution {
+    font-size: 14px;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {
+} */
