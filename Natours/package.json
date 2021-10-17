@@ -1,0 +1,12 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "learning advanced css & sass",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch --no-cache sass:css",
+    "server": "live-server"
+  },
+  "author": "Whitegod Kingsley",
+  "license": "MIT"
+}
